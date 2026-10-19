@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/*.txt
+data/*.csv
+figures/*.png
+figures/*.jpeg
+figures/*.tiff
