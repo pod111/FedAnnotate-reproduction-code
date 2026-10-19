@@ -1,0 +1,89 @@
+{
+  "protocol": {
+    "K": 3,
+    "epsilon": 4.0,
+    "splits": [
+      11,
+      23
+    ],
+    "noise_seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ]
+  },
+  "datasets": {
+    "MSRA-NER": {
+      "n_items": 6181,
+      "methods": {
+        "local_only": {
+          "macroF1": 0.5395,
+          "sd": 0.0019,
+          "min_k_f1": 0.4702,
+          "membership_auc": 0.5
+        },
+        "centralized": {
+          "macroF1": 0.6155,
+          "sd": 0.0,
+          "min_k_f1": null,
+          "membership_auc": 0.5
+        },
+        "fedavg": {
+          "macroF1": 0.6146,
+          "sd": 0.0008,
+          "min_k_f1": 0.4975,
+          "membership_auc": 0.4881
+        },
+        "fedavg_dp_uniform": {
+          "macroF1": 0.5812,
+          "sd": 0.0303,
+          "min_k_f1": 0.4665,
+          "membership_auc": 0.4905
+        },
+        "fedannotate": {
+          "macroF1": 0.5874,
+          "sd": 0.0281,
+          "min_k_f1": 0.4706,
+          "membership_auc": 0.4895
+        }
+      }
+    },
+    "News-NER": {
+      "n_items": 194,
+      "methods": {
+        "local_only": {
+          "macroF1": 0.324,
+          "sd": 0.0009,
+          "min_k_f1": 0.2043,
+          "membership_auc": 0.5
+        },
+        "centralized": {
+          "macroF1": 0.361,
+          "sd": 0.0,
+          "min_k_f1": null,
+          "membership_auc": 0.5
+        },
+        "fedavg": {
+          "macroF1": 0.3606,
+          "sd": 0.0018,
+          "min_k_f1": 0.2001,
+          "membership_auc": 0.4405
+        },
+        "fedavg_dp_uniform": {
+          "macroF1": 0.374,
+          "sd": 0.0295,
+          "min_k_f1": 0.2027,
+          "membership_auc": 0.4412
+        },
+        "fedannotate": {
+          "macroF1": 0.3658,
+          "sd": 0.0202,
+          "min_k_f1": 0.1867,
+          "membership_auc": 0.4398
+        }
+      }
+    }
+  }
+}
