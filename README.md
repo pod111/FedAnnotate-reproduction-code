@@ -15,6 +15,16 @@ Everything runs on CPU. No GPU, no network access, no pre-trained model.
 | Fig. 4 | `make_fig4` | `figures/fig4_chinese_eps_tradeoff.{png,jpeg,tiff}` |
 | Labeling-function mining | `mine_rules` | `_mined_fed.json`, `_mined_ner1998.json` |
 
+## Anonymous mirror
+
+An anonymised mirror of this repository, used for double-blind review, is
+available at:
+
+    https://anonymous.4open.science/r/FedAnnotate-reproduction-code-E537/
+
+The GitHub repository above is the primary copy; the mirror is a read-only
+anonymous view of the same commit.
+
 ## Quick start
 
 ```bash
